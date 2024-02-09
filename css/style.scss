@@ -1,0 +1,132 @@
+// Theme Showcase
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+.default {
+  --bg: #000;
+  --text: #fff;
+  --gray: #292b2c;
+
+  --red: red;
+  --blue: blue;
+  --green: green;
+  --yellow: yellow;
+  --orange: orange;
+  --purple: purple;
+
+}
+
+.rose-pine {
+  --bg: #16141f;
+  --text: #e0def4;
+  --gray: #26233a;
+
+  --red: #eb6f92;
+  --blue: #31748f;
+  --green: #9ccfd8;
+  --yellow: #f6c177;
+  --orange: #ebbcba;
+  --purple: #c4a7e7;
+}
+
+.catppuccin {
+  --bg: #11111b;
+  --text: #cdd6f4;
+  --gray: #313244;
+
+  --red: #f38ba8;
+  --blue: #89b4fa;
+  --green: #a6e3a1;
+  --yellow: #f9e2af;
+  --orange: #fab387;
+  --purple: #cba6f7;
+}
+
+.tokyo-night {
+  --bg: #1a1b26;
+  --text: #9aa5ce;
+  --gray: #414868;
+
+  --red:  #f7768e;
+  --blue: #7aa2f7;
+  --green:  #9ece6a;
+  --yellow:  #e0af68;
+  --orange:  #ff9e64;
+  --purple: #bb9af7;
+}
+
+#source-code-pro > * { font-family: "Source Code Pro", monospace; }
+#fira-code > * { font-family: "Fira Code", monospace; }
+#inconsolata > * { font-family: "Inconsolata", monospace; }
+
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+
+.color-box {
+  display: flex;
+  gap: 1rem;
+  
+  & > p { padding-inline: 0; }
+}
+
+.red { color: var(--red) }
+.blue { color: var(--blue) }
+.green { color: var(--green) }
+.yellow { color: var(--yellow) }
+.orange { color: var(--orange) }
+.purple { color: var(--purple) }
+
+p {
+  padding-inline: 10rem;
+  font-size: 1.5rem;
+}
+
+.link-div {
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--blue);
+
+  &:hover {
+    color: var(--purple);
+  }
+}
+
+.button-box {
+  background-color: var(--gray);
+  padding: 1rem 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  p { padding-inline: 1rem; }
+  .color-box { flex-direction: column; }
+}
